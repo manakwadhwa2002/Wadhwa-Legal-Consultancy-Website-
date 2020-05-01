@@ -1,0 +1,386 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Online | Wadhwa Legal Consultancy</title>
+    <link rel="shortcut icon" href="../Related Photos/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../Related Photos/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="home.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/84b568a5cc.js" crossorigin="anonymous"></script>
+    <style>
+        .item {
+            display: none;
+        }
+
+        .next-buttons {
+            font-size: 22px;
+            padding: 12px;
+            margin: 10px;
+            color: whitesmoke;
+            background: orangered;
+            border: 1px solid orangered;
+            float: right;
+        }
+
+        #selection-area {
+            border: 1px solid black;
+            background: whitesmoke;
+            padding: 20px;
+            width: 84%;
+            height: 90%;
+            margin: auto;
+        }
+
+        .booking-area {
+            width: 100%;
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        #service-type {
+            width: 100%;
+            margin: auto;
+        }
+
+        #service-type button {
+            bottom: 0;
+            right: 0;
+        }
+
+        .service-type-items {
+            border: 1px solid black;
+            width: 25%;
+            float: left;
+            margin: 20px;
+        }
+
+        .service-type-items img {
+            width: 100%;
+            height: 150px;
+        }
+
+        .service-type-items h4 {
+            font: 18px black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .service-conultants-name {
+            border: 1px solid black;
+            width: 25%;
+            float: left;
+            margin: 20px;
+        }
+
+        .service-conultants-name img {
+            width: 100%;
+            height: 150px;
+        }
+
+        .service-conultants-name h4 {
+            font: 18px black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .booking-buttons {
+            font-size: 26px;
+            padding: 20px;
+            font-weight: bold;
+            color: #404042;
+            background: rgb(223, 223, 223);
+            border: 0px solid black;
+        }
+
+        .booking-buttons:focus {
+            background: #404042;
+            color: white;
+            font-size: 28px;
+        }
+
+        .time-display-box {
+            padding: 10px;
+            margin: 5px;
+            background: rgb(212, 212, 212);
+            border: 1px solid rgb(212, 212, 212);
+            border-radius: 5px;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .sepration {
+            margin-left: 180px;
+        }
+        .date-selection{
+            padding: 20px;
+            font-size: 22px;
+        }
+        .courtname{
+            display: inline;
+            text-align: center;
+            width: 100%;
+        }
+        .courts{
+            height: 200px;
+        }
+        .courts img{ 
+            margin-left: 0px;
+            width: 95%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="image_and_naming">
+        <a href="home.html" class="leftfloat"><img src="../Related Photos/logo renwed.jpg"
+                title="Wadhwa Legal Consultancy" alt="Wadhwa Legal Consultancy" /></a>
+        <h1 class="wadhwa leftfloat">Wadhwa Legal Consultancy<br />
+            <div style="font-size: 12px; padding: 4px; text-align: center;" class="leftfloat">Solve your Legal
+                Puzzle</div>
+        </h1>
+    </div>
+
+    <div class="clearfix"></div>
+    <button onclick="topFunction()" id="myBtn" title="Back to top"><i class="fa fa-angle-up"></i></button>
+
+    <!-- Booking Page Starts here... -->
+
+    <div id="service-city" class="item">
+        <div class="courts leftfloat">
+            <img src="../Related Photos/PandH High Court.jpg" class="leftfloat" alt="Punjab and Haryana High Court"
+                title="Punjab and Haryana High Court, Chandigarh" />
+            <p class="leftfloat courtname">Punjab and Haryana<br /> High Court,<br />Chandigarh</p>
+        </div>
+        <div class="courts leftfloat">
+            <img src="../Related Photos/D High Court.jpg" class="leftfloat" alt="Delhi High Court"
+                title="Delhi High Court, New Delhi" />
+            <p class="leftfloat courtname">Delhi High Court,<br />New Delhi</p>
+        </div>
+        <div class="courts leftfloat">
+            <img src="../Related Photos/Dwarka Court.jpg" class="leftfloat" alt="Dwarka District Court"
+                title="Dwarka District Court" />
+            <p class="leftfloat courtname">Dwarka District Court,<br />Sector-10, Dwarka<br />New Delhi</p>
+        </div>
+        <button class="next-buttons" onclick="return Display_below_input()">Next<i class="fa fa-arrow-right"
+                style="margin-left: 5px;"></i></button>
+    </div>
+
+    <div id="service-type" class="item">
+        <div class="service-type-items">
+            <img src="../Related Photos/RTI.webp" title="RTI Matters" alt="RTI Matters" />
+            <h4>RTI Matters</h4>
+        </div>
+        <div class="service-type-items">
+            <img src="../Related Photos/service.jpg" title="Service Matters" alt="Service Matters" />
+            <h4>Service Matters</h4>
+        </div>
+        <div class="service-type-items">
+            <img src="../Related Photos/Criminal Law.jpg" title="Criminal Defense" alt="Criminal Defense" />
+            <h4>Criminal Defense</h4>
+        </div>
+        <div class="service-type-items">
+            <img src="../Related Photos/personal injury.jpg" title="Personal Injury" alt="Personal Injury" />
+            <h4>Personal Injury</h4>
+        </div>
+        <div class="service-type-items">
+            <img src="../Related Photos/Family-Law.jpg" title="Family Law" alt="Family Law" />
+            <h4>Family Law</h4>
+        </div>
+        <div class="clearfix"></div>
+        <button class="next-buttons" onclick="return Display_below_input()">Next<i class="fa fa-arrow-right"
+                style="margin-left: 5px;"></i></button>
+    </div>
+
+    <div id="service-conultants" class="item">
+        <div class="service-conultants-name">
+            <img src="../Related Photos/Blog-image-op-wadhwa.jpg" alt="Prof. OP Wadhwa" />
+            <h4>OP Wadhwa</h4>
+        </div>
+        <div class="service-conultants-name">
+            <img src="" alt="Vinod Wadhwa" />
+            <h4>Vinod Wadhwa</h4>
+        </div>
+
+        <div class="clearfix"></div>
+        <button class="next-buttons" onclick="return Display_below_input()">Next<i class="fa fa-arrow-right"
+                style="margin-left: 5px;"></i></button>
+    </div>
+
+    <div id="date-of-consultancy" class="item">
+        <!-- Date of consultancy code -->
+
+        <input type="date" class="date-selection"/>
+
+        <div class="clearfix"></div>
+        <button class="next-buttons" onclick="return Display_below_input()">Next<i class="fa fa-arrow-right"
+                style="margin-left: 5px;"></i></button>
+    </div>
+
+    <div id="time-slot" class="item">
+
+        <!-- Time slot code -->
+
+        <!--1st Line-->
+        <div class="leftfloat sepration">
+            
+                <input type="button" class="time-display-box" value="09:00 A.M"/> <br/>
+                <input type="button" class="time-display-box" value="09:30 A.M"/> <br/>
+                <input type="button" class="time-display-box" value="10:00 A.M"/> <br/>
+                <input type="button" class="time-display-box" value="10:30 A.M"/> <br/>
+                <input type="button" class="time-display-box" value="11:00 A.M"/> <br/>
+                <input type="button" class="time-display-box" value="11:30 A.M"/> <br/>
+        </div>
+
+        <!-- 2nd Line -->
+
+        <div button class="leftfloat sepration">
+            <input type="button" class="time-display-box" value="12:00 Noon"/> <br/>
+        </div>
+
+        <!-- 3rd Line -->
+
+        <div class="leftfloat sepration">
+            
+            <input type="button" class="time-display-box" value="12:30 P.M"/> <br/>
+            <input type="button" class="time-display-box" value="01:00 P.M"/> <br/>
+            <input type="button" class="time-display-box" value="02:30 P.M"/> <br/>
+            <input type="button" class="time-display-box" value="03:00 P.M"/> <br/>
+            <input type="button" class="time-display-box" value="03:30 P.M"/> <br/>
+            <input type="button" class="time-display-box" value="04:00 P.M"/> <br/>
+            <input type="button" class="time-display-box" value="04:30 P.M"/> <br/>
+            
+
+        </div>
+
+        <div class="clearfix"></div>
+        <button class="next-buttons" onclick="return Display_below_input()">Submit<i class="fa fa-arrow-right"
+                style="margin-left: 5px;"></i></button>
+    </div>
+
+
+    <div id="slider"></div>
+
+    <div class="booking-area">
+        <input type="button" value="Service City" class="booking-buttons" onclick="LoadContent('service-city')" autofocus/>
+        <input type="button" value="Service Type" class="booking-buttons" onclick="LoadContent('service-type')" />
+        <input type="button" value="Service Consultants" class="booking-buttons"
+            onclick="LoadContent('service-conultants')" />
+        <input type="button" value="Date of Consultancy" class="booking-buttons"
+            onclick="LoadContent('date-of-consultancy')" />
+        <input type="button" value="Time Slot" class="booking-buttons" onclick="LoadContent('time-slot')" />
+    </div>
+    <div id="selection-area"></div>
+
+    <!-- Booking page ends here... -->
+
+
+
+
+
+
+
+
+
+    <form class="contact_form" method="GET" action="">
+        <div class="leftfloat">
+            <div id="contact_id"><a>CONTACT US</a></div>
+            <div id="contact_info">
+                <div>JLPL Galaxy Heights,<br /></div>
+                <div>Sector 66 A, Aerocity Rd,<br /></div>
+                <div>Industrial Area, Sahibzada Ajit Singh Nagar,<br /></div>
+                <div>Punjab - 140308</div>
+            </div>
+            <div id="wadhwa_email_form">
+                wadhwalegalconsultancy@gmail.com
+            </div>
+            <div id="contact_number">
+                +91-9466131431
+            </div>
+            <div class="whatsapp">
+                <img src="../Related Photos/whatsapp renwed.png" alt="WhatsApp" class="leftfloat" />
+                <div style="margin-top: 5px; font-family: Verdana, Geneva, Tahoma, sans-serif;" class="leftfloat">-
+                    9466131431</div>
+            </div>
+        </div>
+        <div class="original_form">
+            <input type="text" placeholder="Name*" class="info_collect" />
+            <input type="email" placeholder="Email*" class="info_collect" /><br />
+            <input type="text" placeholder="Phone number*" class="info_collect" />
+            <input type="text" placeholder="Address*" class="info_collect" /><br />
+            <input type="text" placeholder="Subject" class="subject_for_info" /><br />
+            <textarea placeholder="Please Describe Your Case Here..." class="info_collect_message"></textarea><br />
+            <input type="submit" value="Submit" class="submit_info" />
+            <div style="margin-left: 135px; color: black; padding: 10px; font-size: 20px;">Thanks for submitting!
+            </div>
+        </div>
+
+
+    </form>
+
+
+    <div class="designed-and-developed">
+        <div class="bottom-links"> <a href="../Code Files/index.html">Home</a> |
+            <a href="../Code Files/about-page.html">About Us</a> |
+            <a href="../Code Files/index.html">Latest Judgements</a> |
+            <a href="../Code Files/index.html">Legal Services</a> |
+            <a href="../Code Files/blogs.html">Blogs</a> |
+            <a href="../Code Files/contact.html">Contact Us</a> |
+            <a href="../Code Files/sitemap.html">Sitemap</a>
+        </div>
+        <div class="social-media-links">
+            <a href="https://www.facebook.com/Wadhwa-Legal-Consultancy-108166537343656/?modal=admin_todo_tour"><i
+                    class="fab fa-facebook" id="facebook-reach-us-button"></i></a>
+            <a href="https://twitter.com/WLCLegal"><i class="fab fa-twitter" id="twitter-reach-us-button"></i></a>
+            <a
+                href="https://wa.me/919466131431?text=I%20Want%20a%20Legal%20Consultancy%20%2C%20found%20your%20number%20on%20wadhwalegalconsultancy.com%20"><i
+                    class="fab fa-whatsapp" id="whatsapp-reach-us-button"></i></a>
+        </div>
+        <span>Designed & Developed by Manak Wadhwa. All Rights Reserved ©</span>
+    </div>
+
+
+    <script type="text/javascript">
+
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+
+        }
+
+        // Load content in Display box - on click
+
+
+        function LoadContent(content) {
+            document.getElementById("selection-area").innerHTML = document.getElementById(content).innerHTML;
+        }
+        LoadContent("service-city");
+
+        function Display_below_input() {
+
+        }
+    </script>
+</body>
+
+</html>

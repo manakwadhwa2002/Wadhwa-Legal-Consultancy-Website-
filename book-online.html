@@ -1,0 +1,181 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Online | Wadhwa Legal Consultancy</title>
+    <link rel="shortcut icon" href="../Related Photos/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../Related Photos/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="home.css" rel="stylesheet" type="text/css" />
+    <style>
+        .bg-image {
+            /* Image used */
+            background-image: url("../Related Photos/book-online-background.jpg");
+
+            /* Add the blur effect */
+            filter: blur(8px);
+            -webkit-filter: blur(4px);
+
+            /* Full height */
+            height: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bg-text {
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            border: 0px solid #f1f1f1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+        .bg-text button a{
+            color: whitesmoke;
+            text-decoration: none;
+        }
+        .personal-injury{
+            font-size: 72px;
+        }
+        #book-online{
+            background: #EC6633;
+            border: #EC6633 groove;
+            font-size: 32px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-image"></div>
+
+    <div class="bg-text">
+        <div id="image_and_naming">
+            <a href="home.html" class="leftfloat"><img src="../Related Photos/logo renwed.jpg"
+                    title="Wadhwa Legal Consultancy" alt="Wadhwa Legal Consultancy" /></a>
+            <h1 class="wadhwa leftfloat">Wadhwa Legal Consultancy<br />
+                <div style="font-size: 12px; padding: 4px; text-align: center;" class="leftfloat">Solve your Legal
+                    Puzzle</div>
+            </h1>
+            <div class="clearfix"></div>
+            <p style="text-align: left;"><a style="text-decoration: none; color: rgb(168, 168, 168);"
+                    href="home.html">Home </a><span style="color: white;"> >> </span><span><a
+                        style="text-decoration: none; color: orange;" href="book-online.html"> Book Appointment </a></span></p>
+        </div>
+        <h1 class="personal-injury">Book Appointment</h1>
+        <button type="button" value="Book Appointment" id="book-online"><a href="book-appointment.html">Book Appointment</a></button>
+        <p style="font-size: 20px;">Wadhwa Legal Consultancy</p>
+        <p class="wadhwa_email_form">
+            Reach us: (+91)
+            9877789906<br />wadhwalegalconsultancy@gmail.com</p>
+    </div>
+
+    <div class="clearfix"></div>
+    <button onclick="topFunction()" id="myBtn" title="Back to top"><i class="fa fa-angle-up"></i></button>
+    <div class="clearfix"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <form class="contact_form" method="GET" action="">
+        <div class="leftfloat">
+            <div id="contact_id"><a>CONTACT US</a></div>
+            <div id="contact_info">
+                <div>JLPL Galaxy Heights,<br /></div>
+                <div>Sector 66 A, Aerocity Rd,<br /></div>
+                <div>Industrial Area, Sahibzada Ajit Singh Nagar,<br /></div>
+                <div>Punjab - 140308</div>
+            </div>
+            <div id="wadhwa_email_form">
+                wadhwalegalconsultancy@gmail.com
+            </div>
+            <div id="contact_number">
+                +91-9877789906
+            </div>
+            <div class="whatsapp">
+                <img src="../Related Photos/whatsapp renwed.png" alt="WhatsApp" class="leftfloat" />
+                <div style="margin-top: 5px; font-family: Verdana, Geneva, Tahoma, sans-serif;" class="leftfloat">-
+                    9818320258</div>
+            </div>
+        </div>
+        <div class="original_form">
+            <input type="text" placeholder="Name*" class="info_collect" />
+            <input type="email" placeholder="Email*" class="info_collect" /><br />
+            <input type="text" placeholder="Phone number*" class="info_collect" />
+            <input type="text" placeholder="Address*" class="info_collect" /><br />
+            <input type="text" placeholder="Subject" class="subject_for_info" /><br />
+            <textarea placeholder="Please Describe Your Case Here..." class="info_collect_message"></textarea><br />
+            <input type="submit" value="Submit" class="submit_info" />
+            <div style="margin-left: 135px; color: black; padding: 10px; font-size: 20px;">Thanks for submitting!
+            </div>
+        </div>
+
+
+    </form>
+
+
+    <div class="designed-and-developed">
+        <span style="margin-top: 20px;">Designed & Developed by Manak Wadhwa. All Rights Reserved</span>
+    </div>
+
+
+    <script>
+
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
+
+
+<!--
+    <div class="nothing-to-display">
+        <img src="../Related Photos/error-nothing-to display.jpg" alt="Nothing to br display" title="Nothing to display"/><br/>
+        <p>Sorry, There is nothing to display for you...</p>
+    </div>
+-->

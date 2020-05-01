@@ -1,0 +1,205 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login | Wadhwa Legal Consultancy</title>
+  <link rel="shortcut icon" href="../Related Photos/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../Related Photos/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="home.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+      background: #d8d6d6;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .bg-image {
+      background-image: url("../Related Photos/login background.png");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bg-text {
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/opacity/see-through */
+      color: white;
+      font-weight: bold;
+      border: 0px solid #f1f1f1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      padding: 20px;
+      text-align: center;
+    }
+    .login {
+      width: 40%;
+      margin: auto;
+      border: 3px groove #404042;
+      border-radius: 40px;
+      margin-top: 0px;
+      height: 430px;
+    }
+
+    .login img {
+      height: 100px;
+      border-radius: 25px;
+      margin: 20px;
+      margin-left: 10px;
+    }
+
+    .field {
+      width: 40%;
+      margin: 15px;
+      margin-left: 50px;
+      border: 0px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    #input_login_uname , #input_login_pwd {
+      padding: 10px;
+      width: 300px;
+      border: 2px groove skyblue;
+      border-radius: 20px;
+    }
+
+    #submit {
+      background: rgb(107, 107, 107);
+      color: white;
+      padding: 8px;
+      font-size: 20px;
+      border: 4px solid rgb(77, 77, 77);
+      border-radius: 10px;
+    }
+    .contact_form{
+      margin-top: 200px;
+    }
+    @media only screen and (max-width: 900px) {
+      .home {
+        margin-left: 40px;
+        font-size: 20px;
+      }
+      .login {
+        width: 90%;
+        border: 3px groove #404042;
+        border-radius: 20px;
+        margin-top: 50px;
+      }
+
+      .login img {
+        height: 100px;
+        border-radius: 10px;
+        margin: 20px;
+        margin-left: 20px;
+      }
+
+      .field {
+        width: 40%;
+        margin: 15px;
+        margin-left: 0px;
+        border: 0px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      #input_login_uname , #input_login_pwd {
+        padding: 10px;
+        width: 235%;
+        border: 2px groove skyblue;
+        border-radius: 20px;
+      }
+
+      .submit {
+        background: rgb(107, 107, 107);
+        color: white;
+        padding: 8px;
+        font-size: 20px;
+        border: 4px solid rgb(77, 77, 77);
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-left: 0px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <script src="legal.js"></script>
+  <div class="bg-image"></div>
+  <div class="bg-text">
+    <div id="image_and_naming">
+      <a href="home.html" class="leftfloat"><img src="../Related Photos/logo renwed.jpg" title="Wadhwa Legal Consultancy"
+          alt="Wadhwa Legal Consultancy" /></a>
+      <h1 class="wadhwa leftfloat">Wadhwa Legal Consultancy<br />
+        <div style="font-size: 12px; padding: 4px; text-align: center;" class="leftfloat">Solve your Legal
+          Puzzle</div>
+      </h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div style="margin-left: 40px;font-size: 20px;">
+      <p style="text-align: left;"><a style="text-decoration: none; color: rgb(197, 197, 197);" href="home.html">Home
+        </a><span style="color: rgb(46, 46, 46);"> >> </span><span><a href=""
+            style="text-decoration: none; color: #006ec2;">Login</a></span></p>
+    </div>
+    <div class="login">
+      <img src="../Related Photos/avatar lofin.jpg" alt="Login" />
+      <div class="clearfix"></div>
+      <fieldset class="field">
+        <legend>Username : </legend><input type="text" placeholder="Username" id="input_login_uname" />
+      </fieldset>
+      <fieldset class="field">
+        <legend>Password : </legend><input type="password" placeholder="Password" id="input_login_pwd" />
+      </fieldset>
+      <input type="submit" value="Login" onclick="javascript:validate()" id="submit" />
+    </div>
+  </div>
+  <div class="clearfix"></div>
+
+  <form class="contact_form" method="GET" action="">
+    <div class="leftfloat">
+      <div id="contact_id"><a>CONTACT US</a></div>
+      <div id="contact_info">
+        <div>JLPL Galaxy Heights,<br /></div>
+        <div>Sector 66 A, Aerocity Rd,<br /></div>
+        <div>Industrial Area, Sahibzada Ajit Singh Nagar,<br /></div>
+        <div>Punjab - 140308</div>
+      </div>
+      <div id="wadhwa_email_form">
+        wadhwalegalconsultancy@gmail.com
+      </div>
+      <div id="contact_number">
+        +91-9877789906
+      </div>
+      <div class="whatsapp">
+        <img src="../Related Photos/whatsapp renwed.png" alt="WhatsApp" class="leftfloat" />
+        <div style="margin-top: 5px; font-family: Verdana, Geneva, Tahoma, sans-serif;" class="leftfloat">-
+          9818320258</div>
+      </div>
+    </div>
+    <div class="original_form">
+      <input type="text" placeholder="Name*" class="info_collect" />
+      <input type="email" placeholder="Email*" class="info_collect" /><br />
+      <input type="text" placeholder="Phone number*" class="info_collect" />
+      <input type="text" placeholder="Address*" class="info_collect" /><br />
+      <input type="text" placeholder="Subject" class="subject_for_info" /><br />
+      <textarea placeholder="Please Describe Your Case Here..." class="info_collect_message"></textarea><br />
+      <input type="submit" value="Submit" class="submit_info" />
+      <div style="margin-left: 135px; color: black; padding: 10px; font-size: 20px;">Thanks for submitting!
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>

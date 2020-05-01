@@ -1,0 +1,144 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OM PARKASH WADHWA | WADHWA LEGAL CONSULTANCY</title>
+    <link rel="shortcut icon" href="../Related Photos/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../Related Photos/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="home.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/84b568a5cc.js" crossorigin="anonymous"></script>
+    <style>
+        body h1 {
+            font-family: 'Raleway', sans-serif;
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            font-size: 64px;
+            color: #404042;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 210px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 16px 16px;
+            border-bottom: 2px whitesmoke;
+            text-decoration: none;
+            font-size: 26px;
+            color: #818181;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .main {
+            margin-left: 160px;
+            padding: 0px 10px;
+        }
+
+        #nothing-to-display {
+            border: 1px solid black;
+            height: 90%;
+            margin-left: 210px;
+            padding: 0px 10px;
+            font-size: 28px;
+        }
+
+        #nothing-to-display input {
+            width: 98%;
+            margin: auto;
+            margin-top: 20px;
+            padding: 10px;
+            color: black;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        #nothing-to-display textarea {
+            width: 98%;
+            height: 300px;
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+            overflow-y: scroll;
+            max-width: 99%;
+            max-height: 310px;
+        }
+
+        #nothing-to-display button {
+            background-color: cornflowerblue;
+            color: white;
+            width: 300px;
+            border-radius: 20px;
+            border: 0px;
+            font-size: 22px;
+            margin-left: 400px;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        .margin-right {
+            margin-right: 5px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidenav">
+        <a href="#"><i class="fa fa-home margin-right"></i>Home</a>
+        <a href="#" class="buttons"><i class="fa fa-briefcase margin-right"></i>My Office</a>
+        <a href="#"><i class="fa fa-id-card-o margin-right"></i>About</a>
+        <a href="#"><i class="fa fa-gavel margin-right"></i>Legal Services</a>
+        <a href="#" onclick="alert('This Page is currently not available for you.');"><i
+                class="fa fa-users margin-right" "></i>Clients</a>
+        <a href=" #"><i class="fa fa-address-book-o margin-right"></i>Contact</a>
+        <a href="#" onclick="display('write-blog')"><i class="fa fa-pencil-square-o margin-right"></i>Blog</a>
+        <a href="#"><i class="fa fa-cog margin-right"></i>Settings</a>
+        <a href="index.html"><i class="fa fa-sign-out margin-right"></i>Logout</a>
+    </div>
+
+    <div class="main">
+        <h1>Welcome <br /> Prof. Om Parkash Wadhwa</h1>
+    </div>
+
+    <div id="nothing-to-display">
+        <form action="blog-post.php" method="POST">
+            <input type="text" placeholder="Blog Subject" name="blogsubject"><br />
+            <textarea placeholder="Hey Prof,
+             Write Your Blog Here..." name="content"></textarea>
+            <input type="file" name="file">
+             <button type="submit"><i class="fas fa-pen"></i> Post</button>
+        </form>
+    </div>
+
+
+
+    <script type="text/javascript" src="auth.js"></script>
+</body>
+
+</html>

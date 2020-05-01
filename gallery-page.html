@@ -1,0 +1,158 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery | Wadhwa Legal Consultancy</title>
+    <link rel="shortcut icon" href="../Related Photos/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../Related Photos/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="home.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/84b568a5cc.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    body{
+        background: white;
+    }
+    .gallery-images{
+        margin-top: 100px;
+    }
+    .gallery-images img{
+        height: 400px;
+        width: 40%;
+        margin-left: 350px;
+    }
+    .gallery-images h4{
+        text-align: center;
+        font-size: 22px;
+    }
+    @media only screen and (max-width: 900px) {
+        .gallery-images img{
+            margin-left: 0px;
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div id="image_and_naming">
+        <a href="home.html" class="leftfloat"><img src="../Related Photos/logo renwed.jpg"
+                title="Wadhwa Legal Consultancy" alt="Wadhwa Legal Consultancy" /></a>
+        <h1 class="wadhwa leftfloat">Wadhwa Legal Consultancy<br />
+            <div style="font-size: 12px; padding: 4px; text-align: center;" class="leftfloat">Solve your Legal
+                Puzzle</div>
+        </h1>
+    </div>
+
+    <div class="clearfix"></div>
+    <button onclick="topFunction()" id="myBtn" title="Back to top"><i class="fa fa-angle-up"></i></button>
+
+    <!-- Main Page Code goes here-->
+
+        <div class="page-title">
+            <h2>Gallery</h2>
+        </div>
+
+        <div class="gallery-images">
+            <img src="../Related Photos/prof-op-awarded.jpg"/>
+            <h4>Prof. OP Wadhwa being Nodal Officer (literacy cell) is recieving the certificate from the then Judge of Supreme Court, India and in the presence of the then Chief Minister, Haryana and Judges of the Supreme Court and P&H High Court.</h4>
+        </div>
+
+        <div class="gallery-images">
+            <img src="../Related Photos/prof-op-awarded -2.jpg"/>
+            <h4>Prof. OP Wadhwa being Nodal Officer (literacy cell) is recieving the trophy from the then Chief Minister, Haryana and in the presence of the Judges of the Supreme Court and P&H High Court.</h4>
+        </div>
+
+
+    <!-- Main Page Code ends here-->
+    <form class="contact_form" method="GET" action="">
+        <div class="leftfloat">
+            <div id="contact_id"><a>CONTACT US</a></div>
+            <div id="contact_info">
+                <div>301, VidyaNiketan Road,<br /></div>
+                <div>Near D-Park, Model Town,<br /></div>
+                <div>Rohtak - 124001,<br /></div>
+                <div>(Haryana), India</div>
+            </div>
+            <div id="wadhwa_email_form">
+                wadhwalegalconsultancy@gmail.com
+            </div>
+            <div id="contact_number">
+                +91-9466131431
+            </div>
+            <div class="whatsapp">
+                <img src="../Related Photos/whatsapp renwed.png" alt="WhatsApp" class="leftfloat" />
+                <div style="margin-top: 5px; font-family: Verdana, Geneva, Tahoma, sans-serif;" class="leftfloat">-
+                    9466131431</div>
+            </div>
+        </div>
+        <div class="original_form">
+            <input type="text" placeholder="Name*" class="info_collect" />
+            <input type="email" placeholder="Email*" class="info_collect" /><br />
+            <input type="text" placeholder="Phone number*" class="info_collect" />
+            <input type="text" placeholder="Address*" class="info_collect" /><br />
+            <input type="text" placeholder="Subject" class="subject_for_info" /><br />
+            <textarea placeholder="Please Describe Your Case Here..." class="info_collect_message"></textarea><br />
+            <input type="submit" value="Submit" class="submit_info" />
+            <div style="margin-left: 135px; color: black; padding: 10px; font-size: 20px;">Thanks for submitting!
+            </div>
+        </div>
+
+
+    </form>
+
+
+    <div class="designed-and-developed">
+        <div class="bottom-links"> <a href="../Code Files/index.html">Home</a> | 
+            <a href="../Code Files/about-page.html">About Us</a> | 
+            <a href="../Code Files/index.html">Latest Judgements</a> | 
+            <a href="../Code Files/index.html">Legal Services</a> | 
+            <a href="../Code Files/blogs.html">Blogs</a> | 
+            <a href="../Code Files/contact.html">Contact Us</a> | 
+            <a href="../Code Files/sitemap.html">Sitemap</a> 
+        </div>
+        <div class="social-media-links"> 
+            <a href="https://www.facebook.com/Wadhwa-Legal-Consultancy-108166537343656/?modal=admin_todo_tour"><i
+                    class="fab fa-facebook" id="facebook-reach-us-button"></i></a> 
+            <a href="https://twitter.com/WLCLegal"><i class="fab fa-twitter" id="twitter-reach-us-button"></i></a> 
+            <a href="https://wa.me/919466131431?text=I%20Want%20a%20Legal%20Consultancy%20%2C%20found%20your%20number%20on%20wadhwalegalconsultancy.com%20"><i
+                    class="fab fa-whatsapp" id="whatsapp-reach-us-button"></i></a> 
+        </div> 
+        <span>Designed & Developed by Manak Wadhwa. All Rights Reserved ©</span>
+    </div>
+
+
+    <script>
+
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
+
+
+<!--
+    <div class="nothing-to-display">
+        <img src="../Related Photos/error-nothing-to display.jpg" alt="Nothing to br display" title="Nothing to display"/><br/>
+        <p>Sorry, There is nothing to display for you...</p>
+    </div>
+    -->
